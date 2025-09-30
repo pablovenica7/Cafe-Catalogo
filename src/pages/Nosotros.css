@@ -1,0 +1,62 @@
+/* 🎨 Colores de la paleta */
+:root {
+  --color-dark: #0a0908;
+  --color-blue: #22333b;
+  --color-cream: #eae0d5;
+  --color-beige: #c6ac8f;
+  --color-brown: #5e503f;
+}
+
+.nosotros-container {
+  background-color: var(--color-cream);
+  color: var(--color-dark);
+  padding: 8rem 2rem 4rem; /* 🔥 más espacio arriba para que no choque con el menú */
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* ✅ La sección historia mantiene la img a la izquierda, texto a la derecha */
+.section.historia {
+  flex-direction: row; 
+}
+
+.text {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-blue);
+}
+
+.section-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-dark);
+}
+
+.image-wrap {
+  flex: 1 1 350px;
+  max-width: 500px;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  border: 4px solid var(--color-beige);
+}

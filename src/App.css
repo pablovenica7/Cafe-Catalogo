@@ -1,0 +1,24 @@
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: visible;
+}
+
+/* Menú como overlay de toda la pantalla */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  pointer-events: none; /* 🔥 deja pasar eventos al Home */
+}
+
+/* Rehabilita eventos SOLO en el menú */
+.menu-overlay .staggered-menu-header,
+.menu-overlay .staggered-menu-panel,
+.menu-overlay .sm-prelayers {
+  pointer-events: auto;
+}
