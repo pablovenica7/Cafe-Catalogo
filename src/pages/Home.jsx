@@ -30,7 +30,8 @@ export default function Home() {
 
         <TextType
           text={[
-            "Donde la pastelería se encuentra",
+            "Donde la pastelería", 
+            "se encuentra", 
             "con el aroma del café."
           ]}
           as="p"
@@ -46,3 +47,4 @@ export default function Home() {
     </div>
   );
 }
+
