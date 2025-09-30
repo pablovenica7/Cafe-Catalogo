@@ -5,7 +5,6 @@
   color: white;
 }
 
-
 .nosotros-section {
   margin-bottom: 4rem;
 }
@@ -36,6 +35,7 @@
   text-align: center;
 }
 
+/* Separador elegante */
 .nosotros-divider {
   border: 0;
   border-top: 2px solid rgba(255, 255, 255, 0.6);
@@ -61,6 +61,7 @@
   transform: scale(1.05);
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .nosotros-content {
     flex-direction: column;
@@ -71,5 +72,9 @@
   .nosotros-text {
     text-align: center;
     margin: 0 auto;
+  }
+
+  .nosotros-img {
+    max-width: 300px;
   }
 }
