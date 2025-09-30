@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import imgHome from "../assets/img-home.png";
+import imgHome from "../assets/img-home.jpg";
 import BlurText from "../components/BlurText";
 
 export default function Home() {
@@ -30,3 +30,4 @@ export default function Home() {
     </div>
   );
 }
+
