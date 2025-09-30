@@ -1,38 +1,46 @@
 import React from "react";
 import "./Nosotros.css";
-import founders from "../assets/img-home.jpg";
+import imgMision from "../assets/img-mision.png";
+import imgHistoria from "../assets/img-historia.png";
 
 export default function Nosotros() {
   return (
     <div className="nosotros-container">
-      {/* Sección Misión */}
-      <section className="section">
-        <div className="text">
-          <h2 className="section-title">Nuestra Misión</h2>
-          <p className="section-paragraph">
-            Creemos que una cafetería y pastelería no es solo un lugar para disfrutar de un buen café o un postre, 
-            sino un espacio donde se comparte, se inspira y se construyen momentos únicos.  
-            Por eso trabajamos día a día con dedicación, seleccionando ingredientes de calidad y brindando 
-            experiencias que unan a las personas.
-          </p>
-        </div>
-        <div className="image-wrap">
-          <img src={founders} alt="Fundadores Dolce Aroma" className="image" />
+      {/* Nuestra Misión */}
+      <section className="nosotros-section">
+        <div className="nosotros-content">
+          <div className="nosotros-text-wrapper">
+            <h2 className="nosotros-title">Nuestra Misión</h2>
+            <p className="nosotros-text">
+              En Dolce Aroma creemos que la pastelería y el café son más que
+              productos: son experiencias que conectan a las personas. Nuestra
+              misión es ofrecer calidad, tradición y un ambiente acogedor donde
+              cada cliente disfrute un momento único.
+            </p>
+          </div>
+          <div className="nosotros-img-wrapper">
+            <img src={imgMision} alt="Nuestra Misión" className="nosotros-img" />
+          </div>
         </div>
       </section>
 
-      {/* Sección Historia (img izq - texto der) */}
-      <section className="section historia">
-        <div className="image-wrap">
-          <img src={founders} alt="Historia Dolce Aroma" className="image" />
-        </div>
-        <div className="text">
-          <h2 className="section-title">Nuestra Historia</h2>
-          <p className="section-paragraph">
-            Dolce Aroma nació con la idea de combinar el aroma de un café artesanal con el sabor de la pastelería casera.  
-            Lo que empezó como un pequeño local de barrio fue creciendo hasta convertirse en un referente, 
-            donde cada detalle refleja nuestra pasión por el buen gusto, la calidad y el servicio cercano.  
-          </p>
+      <hr className="nosotros-divider" />
+
+      {/* Nuestra Historia */}
+      <section className="nosotros-section">
+        <div className="nosotros-content">
+          <div className="nosotros-img-wrapper">
+            <img src={imgHistoria} alt="Nuestra Historia" className="nosotros-img" />
+          </div>
+          <div className="nosotros-text-wrapper">
+            <h2 className="nosotros-title">Nuestra Historia</h2>
+            <p className="nosotros-text">
+              Nacimos en el corazón de Córdoba con la idea de unir lo mejor de la
+              panadería artesanal con el aroma del café recién tostado. Con
+              dedicación y pasión, Dolce Aroma ha crecido para convertirse en un
+              espacio donde cada detalle cuenta.
+            </p>
+          </div>
         </div>
       </section>
     </div>
