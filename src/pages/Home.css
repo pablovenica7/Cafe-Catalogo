@@ -13,7 +13,7 @@
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
-  pointer-events: none; /* 🔥 no bloquea el mouse */
+  pointer-events: none;
 }
 
 .home-content {
@@ -33,7 +33,6 @@
   color: white;
 }
 
-/* 🔥 BlurText aplicado en el título */
 .home-title {
   font-size: 3.5rem;
   font-weight: 700;
@@ -41,7 +40,6 @@
   line-height: 1.2;
 }
 
-/* 🔥 BlurText aplicado en la frase */
 .home-subtitle {
   font-size: 1.5rem;
   font-weight: 300;
@@ -52,7 +50,6 @@
   margin-right: auto;
 }
 
-/* 🔥 Botón estilo píldora con elevación */
 .home-button {
   background-color: white;
   color: black;
