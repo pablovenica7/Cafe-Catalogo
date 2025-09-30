@@ -1,6 +1,6 @@
 import React from "react";
 import "./Nosotros.css";
-import founders from "../assets/img-home.png"; // ⚡ reemplazá con foto real
+import founders from "../assets/img-home.jpg";
 
 export default function Nosotros() {
   return (
@@ -38,3 +38,4 @@ export default function Nosotros() {
     </div>
   );
 }
+
