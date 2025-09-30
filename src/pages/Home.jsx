@@ -1,7 +1,8 @@
 import React from "react";
 import "./Home.css";
 import imgHome from "../assets/img-home.jpg";
-import BlurText from "../components/BlurText";
+import SplitText from "../components/SplitText";
+import TextType from "../components/TextType";
 
 export default function Home() {
   return (
@@ -11,23 +12,37 @@ export default function Home() {
     >
       <div className="overlay"></div>
       <div className="home-content">
-        <BlurText
+        <SplitText
           text="Dolce Aroma"
-          delay={150}
-          animateBy="words"
-          direction="top"
+          tag="h1"
           className="home-title"
-        />
-        <BlurText
-          text="Donde la pastelería se encuentra con el aroma del café."
           delay={100}
-          animateBy="words"
-          direction="bottom"
-          className="home-subtitle"
+          duration={0.6}
+          ease="power3.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 40 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.1}
+          rootMargin="-100px"
+          textAlign="center"
+          onLetterAnimationComplete={() => console.log("Título animado!")}
         />
+
+        <TextType
+          text={[
+            "Donde la pastelería se encuentra",
+            "con el aroma del café."
+          ]}
+          as="p"
+          className="home-subtitle"
+          typingSpeed={75}
+          pauseDuration={1500}
+          showCursor={true}
+          cursorCharacter="|"
+        />
+
         <button className="home-button">Ver productos</button>
       </div>
     </div>
   );
 }
-
