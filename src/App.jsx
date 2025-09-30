@@ -17,7 +17,6 @@ export default function App() {
   return (
     <Router>
       <div className="app-container">
-        {/* Menú overlay */}
         <div className="menu-overlay">
           <StaggeredMenu
             position="right"
