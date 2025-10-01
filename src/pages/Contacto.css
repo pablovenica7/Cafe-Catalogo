@@ -1,8 +1,8 @@
 .contacto-container {
   display: flex;
   min-height: 100vh;
-  background-color: #f8f6f4;
-  color: #111;
+  background-color: #1a1a1a;
+  color: white;
 }
 
 .contacto-image {
@@ -55,11 +55,17 @@
 .contacto-form input,
 .contacto-form textarea {
   border: none;
-  border-bottom: 2px solid #111;
+  border-bottom: 2px solid #fff;
   padding: 0.6rem;
   font-size: 1rem;
   background: transparent;
   outline: none;
+  color: white;
+}
+
+.contacto-form input::placeholder,
+.contacto-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .contacto-form textarea {
