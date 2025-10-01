@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contacto.css";
-import imgContacto from "../assets/img-contacto.png"; // tu imagen
+import imgContacto from "../assets/img-contacto.png";
 
 export default function Contacto() {
   return (
@@ -51,3 +51,4 @@ export default function Contacto() {
     </div>
   );
 }
+
