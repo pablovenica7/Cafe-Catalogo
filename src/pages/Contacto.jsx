@@ -10,7 +10,7 @@ export default function Contacto() {
         <img src={imgContacto} alt="Contacto" />
       </div>
 
-      {/* Columna derecha: Formulario y datos */}
+      {/* Columna derecha: Formulario */}
       <div className="contacto-content">
         <h2 className="contacto-title">Contact Us</h2>
 
@@ -34,21 +34,8 @@ export default function Contacto() {
 
             <button type="submit" className="contacto-btn">Contact Us</button>
           </form>
-
-          {/* Datos de contacto */}
-          <div className="contacto-info">
-            <p><strong>Contact</strong><br/>hi@fashion.com</p>
-            <p><strong>Based in</strong><br/>San Francisco, California</p>
-
-            <div className="contacto-socials">
-              <a href="#"><i className="fab fa-facebook"></i></a>
-              <a href="#"><i className="fab fa-instagram"></i></a>
-              <a href="#"><i className="fab fa-twitter"></i></a>
-            </div>
-          </div>
         </div>
       </div>
     </div>
   );
 }
-
